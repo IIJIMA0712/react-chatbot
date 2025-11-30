@@ -1,16 +1,69 @@
-# React + Vite
+# React Chatbot Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 概要
+このプロジェクトは、React + Viteで構築したチャットボットUIアプリです。  
+将来的にRails APIと連携し応答機能を追加予定です。
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## デモ
+[デモURLをここに記載（VercelやNetlifyで公開）]
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 技術
+- **Frontend**: React, Vite, CSS Modules
+- **State Management**: React Hooks (`useChat`)
+- **API**: Rails（予定）
+- **その他**: Axios, ESLint, Prettier
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## プロジェクト構成
+```
+src/
+ ├── components/
+ │    ├── ChatWindow.jsx
+ │    ├── Message.jsx
+ ├── hooks/
+ │    └── useChat.js
+ ├── api/
+ │    └── apiClient.js
+ ├── App.jsx
+ └── main.jsx
+```
+
+---
+
+## セットアップ手順
+```bash
+# クローン
+git clone https://github.com/IIJIMA0712/react-chatbot.git
+cd chatbot-portfolio
+
+# 依存関係インストール
+npm install
+
+# 開発サーバー起動
+npm run dev
+```
+
+---
+
+## 主な機能
+- ユーザー入力に応じたチャットUI表示
+- メッセージ履歴管理（React Hooks）
+- API連携準備済み（Railsバックエンド）
+
+
+---
+
+## 今後の改善予定
+- Rails APIとの統合
+- 自然言語処理
+- UIデザインの強化
+
+---
+
+## ライセンス
+MIT License
